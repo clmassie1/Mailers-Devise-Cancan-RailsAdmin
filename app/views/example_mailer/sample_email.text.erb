@@ -1,2 +1,6 @@
-Hi <%= User.first.email%>
+The Following Email expire today please delete<%  Mailer.all.each do |mailer| %>
+      <tr>
+        <td><%= mailer.mailer %></td>
+      </tr>
+    <% end %>
 Sample mail sent using smtp.
