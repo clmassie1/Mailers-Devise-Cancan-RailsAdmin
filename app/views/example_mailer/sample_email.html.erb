@@ -4,7 +4,14 @@
     <meta content='text/html; charset=UTF-8' http-equiv='Content-Type' />
   </head>
   <body>
-    <h1>Hi <%= User.first.email %></h1>
+        <%  Mailer.all.each do |mailer| %> 
+        <% if   mailer.last_date == Date.today %> 
+      <tr>
+        <td><%= mailer.mailer %></td>
+      </tr>
+    <% end %>
+  
+  <% end %>
     <p>
       Sample mail sent using smtp.
     </p>
