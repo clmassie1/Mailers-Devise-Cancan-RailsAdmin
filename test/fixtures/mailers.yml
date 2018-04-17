@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  mailer: 
+  test: 
+  last_date: 2018-04-16
+  first_date: 2018-04-16
+
+two:
+  mailer: 
+  test: 
+  last_date: 2018-04-16
+  first_date: 2018-04-16

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180416152145) do
+ActiveRecord::Schema.define(version: 20180416175016) do
 
   create_table "cars", force: :cascade do |t|
     t.string "brand"
@@ -39,6 +39,15 @@ ActiveRecord::Schema.define(version: 20180416152145) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "mailers", force: :cascade do |t|
+    t.string "mailer"
+    t.string "test"
+    t.date "last_date"
+    t.date "first_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "rents", force: :cascade do |t|
     t.decimal "price", precision: 8, scale: 2
     t.decimal "decimal", precision: 8, scale: 2
@@ -49,6 +58,14 @@ ActiveRecord::Schema.define(version: 20180416152145) do
     t.integer "client_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "resources", force: :cascade do |t|
+    t.date "last_date"
+    t.date "first_date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "name"
   end
 
   create_table "users", force: :cascade do |t|
@@ -64,6 +81,9 @@ ActiveRecord::Schema.define(version: 20180416152145) do
     t.datetime "last_sign_in_at"
     t.string "current_sign_in_ip"
     t.string "last_sign_in_ip"
+    t.boolean "superadmin_role"
+    t.boolean "supervisor_role"
+    t.boolean "user_role"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
