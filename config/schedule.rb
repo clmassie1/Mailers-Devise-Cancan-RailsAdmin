@@ -10,7 +10,7 @@
 
 set :environment, :development
 
-every 1.minutes do
+every 5.minutes do
   runner "ExampleMailer.sample_email"
 #   rake "some:great:rake:task"
 end
