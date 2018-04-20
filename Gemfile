@@ -38,7 +38,8 @@ gem 'rails_admin_rollincode', '~> 1.0'
 gem "devise"
 gem "figaro"
 gem 'cancan'
-gem 'whenever', require: false
+gem 'smarter_csv'
+gem 'dropbox-sdk-v2'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
