@@ -13,7 +13,7 @@ module CarRentAdmin
     ENV['RAILS_ADMIN_THEME'] = 'rollincode'
      config.after_initialize do
        Rails.application.load_tasks # <---
-       Rake::Task['import:softwares'].invoke
+       Rake::Task['import:resources'].invoke
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration should go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded.
