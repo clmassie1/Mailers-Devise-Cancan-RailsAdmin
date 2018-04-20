@@ -1,24 +1,53 @@
-# README
+Asset Management
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a comprehensive approach to gathering data from a number of sources (Spiceworks, Insperity payroll, etc. ) along with the capability to render an employee asset and system privilege profile.
+### Prerequisites
 
-Things you may want to cover:
+Verify that you have a current version of Ruby, Rails, and sqlite3 installed with following commands 
+```
+ruby -v
+ruby 2.4.2
+```
+```
+sqlite3 --version
+3.19.3
+```
+```
+gem install rails
+```
+```
+rails --version
+Rails 5.1.4
+```
+### Installing
 
-* Ruby version
+After cloning repo run the following commands
 
-* System dependencies
+```
+gem install composite_primary_keys
+```
+```
+bundle install --without "mysql oracle postgresql sqlserver"
+``` 
+```
+rails db:migrate
+```
+## load data
+seed the database with following commands 
+```
+bundle exec rake import:softwares 
+```
+```
+bundle exec rake import:resources 
+```
+```
+bundle exec rake import:hardwares 
+```
+```
+rails s
+```
+## Authors
 
-* Configuration
+* **Clayton Massie** - *Initial work* - [ClayMassie ](https://github.com/clmassie1)
 
-* Database creation
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
