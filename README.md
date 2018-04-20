@@ -1,6 +1,6 @@
 Asset Management
 
-This is a comprehensive approach to gathering data from a number of sources (Spiceworks, Insperity payroll, etc. ) along with the capability to render an employee asset and system privilege profile.
+This is a comprehensive approach to gathering data from a number of sources from dropbox and producing  reports as pdf for admin user
 ### Prerequisites
 
 Verify that you have a current version of Ruby, Rails, and sqlite3 installed with following commands 
@@ -31,20 +31,6 @@ bundle install --without "mysql oracle postgresql sqlserver"
 ``` 
 ```
 rails db:migrate
-```
-## load data
-seed the database with following commands 
-```
-bundle exec rake import:softwares 
-```
-```
-bundle exec rake import:resources 
-```
-```
-bundle exec rake import:hardwares 
-```
-```
-rails s
 ```
 ## Authors
 
