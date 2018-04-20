@@ -33,6 +33,7 @@ RailsAdmin.config do |config|
     edit
     delete
     show_in_app
+    charts
 
     ## With an audit adapter, you can add:
     # history_index

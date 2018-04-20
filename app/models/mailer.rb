@@ -1,5 +1,5 @@
 class Mailer < ApplicationRecord
-
+    include RailsAdminCharts
         after_create :send_email_if 
         
         def send_email_if
