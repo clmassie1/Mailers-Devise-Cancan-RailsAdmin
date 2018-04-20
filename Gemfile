@@ -44,6 +44,7 @@ gem 'dropbox-sdk-v2'
 gem 'rails_admin_charts'
 # gem 'rmagick'
 # gem "query_report"
+gem "rails_admin_import", "~> 2.1"
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
