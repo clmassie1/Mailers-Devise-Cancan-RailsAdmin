@@ -1,4 +1,5 @@
 class Rent < ApplicationRecord
+    include RailsAdminCharts
     has_one :car
     has_one :client
     belongs_to :claim
