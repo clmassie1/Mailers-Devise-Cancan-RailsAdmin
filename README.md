@@ -1,6 +1,6 @@
 Asset Management
 
-This is a comprehensive approach to gathering data from a number of sources from dropbox and producing  reports as pdf for admin user
+This is a comprehensive approach to gathering data from a number of sources from dropbox and producing reports as pdf for admin user
 ### Prerequisites
 
 Verify that you have a current version of Ruby, Rails, and sqlite3 installed with following commands 
