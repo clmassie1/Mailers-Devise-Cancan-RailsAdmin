@@ -9,6 +9,6 @@ class User < ApplicationRecord
        after_create :send_welcome_message #, other callbacks..
         
         def send_welcome_message
-            UserNotifier.send_signup_email(@user).deliver
+          UserNotifierMailer.send_signup_email(@user).deliver
         end
 end
