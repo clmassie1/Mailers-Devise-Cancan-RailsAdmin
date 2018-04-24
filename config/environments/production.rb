@@ -32,15 +32,6 @@ Rails.application.configure do
 
   # `config.assets.precompile` and `config.assets.version` have moved to config/initializers/assets.rb
 
-  ActionMailer::Base.smtp_settings = {
-    :user_name => 'clmassie.1@gmail.com',
-    :password => 'SunShine2015',
-    :domain => 'yourdomain.com',
-    :address => 'smtp.sendgrid.net',
-    :port => 587,
-    :authentication => :plain,
-    :enable_starttls_auto => true
-  }
   # Enable serving of images, stylesheets, and JavaScripts from an asset server.
   # config.action_controller.asset_host = 'http://assets.example.com'
 

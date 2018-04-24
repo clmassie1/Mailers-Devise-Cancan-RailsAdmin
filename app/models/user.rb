@@ -6,9 +6,9 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :trackable, :validatable
 
 
-       after_create :send_welcome_message #, other callbacks..
+      #  after_create :send_welcome_message #, other callbacks..
         
-        def send_welcome_message
-          UserNotifierMailer.send_signup_email(@user).deliver
-        end
+      #   def send_welcome_message
+      #       UserNotifier.send_signup_email(@user).deliver
+      #   end
 end
