@@ -1,0 +1,51 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  managed_by: MyString
+  office: 1
+  employee_number: 1
+  hire_date: 2018-04-24
+  termination_date: 2018-04-24
+  first_name: MyString
+  last_name: MyString
+  friendly_name: MyString
+  install_date: 2018-04-24
+  device_sn_number: 1
+  device: MyString
+  office: MyString
+  adobe: MyString
+  visio: MyString
+  location: MyString
+  status: MyString
+  operating_system: MyString
+  email: MyString
+  voip: MyString
+  ext_number: MyString
+  office: MyString
+  direct_dial: MyString
+  notes: MyText
+
+two:
+  managed_by: MyString
+  office: 1
+  employee_number: 1
+  hire_date: 2018-04-24
+  termination_date: 2018-04-24
+  first_name: MyString
+  last_name: MyString
+  friendly_name: MyString
+  install_date: 2018-04-24
+  device_sn_number: 1
+  device: MyString
+  office: MyString
+  adobe: MyString
+  visio: MyString
+  location: MyString
+  status: MyString
+  operating_system: MyString
+  email: MyString
+  voip: MyString
+  ext_number: MyString
+  office: MyString
+  direct_dial: MyString
+  notes: MyText
