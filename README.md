@@ -1,6 +1,12 @@
 # Asset Management
 
 This is a comprehensive approach to gathering data from a number of sources from dropbox and producing  reports as pdf for admin user, using rails_admin
+
+### Testing
+
+[Ruby ](https://www.ruby-lang.org/en/) - The language used
+[SQLite3 ](https://www.sqlite.org/index.html) - Library used to build the database
+[RSpec ](http://rspec.info/) - The testing suite used
 ### Prerequisites
 
 Verify that you have a current version of Ruby, Rails, and sqlite3 installed with following commands 
