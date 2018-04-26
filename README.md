@@ -1,6 +1,6 @@
 # Asset Management
 
-This is a comprehensive approach to gathering data from a number of sources from dropbox and producing  reports as pdf for admin user
+This is a comprehensive approach to gathering data from a number of sources from dropbox and producing  reports as pdf for admin user, using rails_admin
 ### Prerequisites
 
 Verify that you have a current version of Ruby, Rails, and sqlite3 installed with following commands 
@@ -24,10 +24,7 @@ Rails 5.1.4
 After cloning repo run the following commands
 
 ```
-gem install composite_primary_keys
-```
-```
-bundle install --without "mysql oracle postgresql sqlserver"
+bundle install 
 ``` 
 ```
 rails db:migrate
