@@ -1,0 +1,2 @@
+class EmployeeAssetList < ApplicationRecord
+end
